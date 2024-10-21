@@ -40,7 +40,11 @@ ALTER COLUMN user_age drop NOT NULL;
 ALTER TABLE person 
 ADD constraint unique_person_user_age UNIQUE(user_age);
 
--- jokhn ami drop korbo tokhn full database ta remove hoye jabe
+-- jokhn ami drop korbo tokhn full table ta remove hoye jabe
 DROP TABLE person;
 -- jokhn ami caibo stucture thakbe sudu row or value gula thakbe na tokhn ami TRUNCATE use korbo
 TRUNCATE TABLE person3;
+
+-- select muloto use hoi data read korar jonno . kono table ar kono data dekbo or sob data dekbo .
+-- Select use hoi data query korar jonno.select a clause use kore condition korte pari, sorting korte pari, 
+-- aro onk gula kaj korte pari
