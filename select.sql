@@ -27,3 +27,16 @@ INSERT INTO student (student_id, first_name, last_name, age, gender, grade_level
 
 -- select every column from student
 SELECT * FROM student;
+
+-- ai koyekt field jodi dekte cai 
+SELECT age, email,blood_group FROM student;
+
+-- jodi rename korte cai . mane email ase ami take Student Email sihabe dekte cai 
+SELECT email as "Student Email",age FROM student;
+
+-- ami chassi first name and last name diye sort kore dekabe 
+SELECT * FROM student ORDER BY first_name DESC;
+
+SELECT * FROM student ORDER BY first_name ASC;
+SELECT * FROM student ORDER BY age ASC;
+SELECT * FROM student ORDER BY age DESC;
