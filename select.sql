@@ -1,3 +1,4 @@
+-- Active: 1729443357593@@127.0.0.1@5432@test
 CREATE TABLE student (
     student_id SERIAL PRIMARY KEY,
     first_name VARCHAR(50) NOT NULL,
@@ -12,3 +13,17 @@ CREATE TABLE student (
     blood_group VARCHAR(3),
     country VARCHAR(50)
 );
+INSERT INTO student (student_id, first_name, last_name, age, gender, grade_level, admission_date, course, email, dob, blood_group, country) VALUES
+(1, 'John', 'Doe', 16, 'M', 10, '2022-09-01', 'Mathematics', 'john.doe@example.com', '2006-03-12', 'O+', 'USA'),
+(2, 'Jane', 'Smith', 17, 'F', 11, '2021-09-01', 'Biology', 'jane.smith@example.com', '2005-07-19', 'A+', 'Canada'),
+(3, 'Michael', 'Johnson', 15, 'M', 9, '2023-01-15', 'Physics', 'michael.johnson@example.com', '2007-11-05', 'B+', 'UK'),
+(4, 'Emily', 'Davis', 18, 'F', 12, '2020-09-01', 'Chemistry', 'emily.davis@example.com', '2004-05-22', 'AB-', 'Australia'),
+(5, 'William', 'Brown', 16, 'M', 10, '2022-02-25', 'History', 'william.brown@example.com', '2006-10-01', 'O-', 'USA'),
+(6, 'Sophia', 'Miller', 14, 'F', 9, '2023-09-10', 'Computer Science', 'sophia.miller@example.com', '2008-09-25', 'A-', 'Canada'),
+(7, 'James', 'Wilson', 17, 'M', 11, '2021-09-01', 'Mathematics', 'james.wilson@example.com', '2005-04-15', 'B-', 'UK'),
+(8, 'Olivia', 'Moore', 18, 'F', 12, '2020-09-01', 'Economics', 'olivia.moore@example.com', '2004-06-30', 'O+', 'Australia'),
+(9, 'Liam', 'Taylor', 16, 'M', 10, '2022-09-01', 'Physics', 'liam.taylor@example.com', '2006-12-10', 'B+', 'USA'),
+(10, 'Isabella', 'Anderson', 15, 'F', 9, '2023-01-15', 'English', 'isabella.anderson@example.com', '2007-01-20', 'AB+', 'Canada');
+
+-- select every column from student
+SELECT * FROM student;
