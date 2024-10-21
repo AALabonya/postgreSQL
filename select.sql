@@ -40,3 +40,8 @@ SELECT * FROM student ORDER BY first_name DESC;
 SELECT * FROM student ORDER BY first_name ASC;
 SELECT * FROM student ORDER BY age ASC;
 SELECT * FROM student ORDER BY age DESC;
+
+SELECT country FROM student ORDER BY country ASC;
+
+-- ami jodi dekte cai UNIQUE country koyta aase
+SELECT DISTINCT country FROM student
