@@ -45,3 +45,11 @@ SELECT country FROM student ORDER BY country ASC;
 
 -- ami jodi dekte cai UNIQUE country koyta aase
 SELECT DISTINCT country FROM student
+
+-- condition ar jonno amra WHERE use kori
+SELECT * FROM student 
+ WHERE country ='USA'
+
+ --2ta condition ar jonno amra WHERE ,AND  use kori
+ SELECT * FROM student 
+ WHERE grade_level ='10' AND course='Physics'
