@@ -35,3 +35,7 @@ ALTER COLUMN user_age SET NOT NULL;
  -- KIVABE COLUMN A CONSTRAINTS remove KORA JAY 
 ALTER TABLE person 
 ALTER COLUMN user_age drop NOT NULL;
+
+ -- UNIQUE key jodi create korte cai
+ALTER TABLE person 
+ADD constraint unique_person_user_age UNIQUE(user_age);
