@@ -53,3 +53,7 @@ SELECT * FROM student
  --2ta condition ar jonno amra WHERE ,AND  use kori
  SELECT * FROM student 
  WHERE grade_level ='10' AND course='Physics'
+
+  --SELECT student form austlia or from usa
+ SELECT * FROM student 
+ WHERE country ='USA' OR country ='Australia'
