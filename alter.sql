@@ -39,3 +39,8 @@ ALTER COLUMN user_age drop NOT NULL;
  -- UNIQUE key jodi create korte cai
 ALTER TABLE person 
 ADD constraint unique_person_user_age UNIQUE(user_age);
+
+-- jokhn ami drop korbo tokhn full database ta remove hoye jabe
+DROP TABLE person;
+-- jokhn ami caibo stucture thakbe sudu row or value gula thakbe na tokhn ami TRUNCATE use korbo
+TRUNCATE TABLE person3;
