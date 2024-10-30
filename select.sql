@@ -101,3 +101,11 @@ SELECT * FROM student
      
 
      SELECT * FROM student LIMIT 5  OFFSET 5*0;
+
+    --  update 
+UPDATE student
+set email='ammmu@gmail' WHERE student_id = 4; 
+
+SHOW timezone
+
+SELECT now()
