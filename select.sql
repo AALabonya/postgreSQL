@@ -93,3 +93,5 @@ SELECT * FROM student
   WHERE last_name ILIKE '%H';
 
   -- data get korar somoy pagination implement korte hole OFFSET use korbo 
+
+   SELECT * FROM student LIMIT 5
