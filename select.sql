@@ -74,3 +74,7 @@ SELECT * FROM student
     -- jodi ai value('UK','USA','Canada) chara value cai tahole NOT IN keyword use korte pari 
   SELECT * FROM student
   WHERE country NOT IN ('UK','USA','Canada')
+
+  -- ami jodi cai j amk 2004-05-22 ato value theke 2004-06-30 value gula dao tahole between use korbo 
+  SELECT * FROM student
+  WHERE dob BETWEEN '2004-05-22' and '2004-08-22';
