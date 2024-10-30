@@ -77,4 +77,8 @@ SELECT * FROM student
 
   -- ami jodi cai j amk 2004-05-22 ato value theke 2004-06-30 value gula dao tahole between use korbo 
   SELECT * FROM student
-  WHERE dob BETWEEN '2004-05-22' and '2004-08-22';
+  WHERE dob BETWEEN '2004-05-22' and '2007-08-22';
+
+-- filtering 
+  SELECT * FROM student
+  WHERE dob BETWEEN '2004-05-22' and '2007-08-22' ORDER BY dob;
