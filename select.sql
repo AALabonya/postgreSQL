@@ -82,3 +82,12 @@ SELECT * FROM student
 -- filtering 
   SELECT * FROM student
   WHERE dob BETWEEN '2004-05-22' and '2007-08-22' ORDER BY dob;
+
+
+-- case sensative jei case thakbe seta e dite hobe
+    SELECT * FROM student
+  WHERE last_name LIKE '%H';
+
+-- ILIKE use korle small and capital kono somossa nai j kono worde thake e filter kaj korbe
+      SELECT * FROM student
+  WHERE last_name ILIKE '%H';
