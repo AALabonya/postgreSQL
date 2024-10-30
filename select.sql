@@ -94,4 +94,10 @@ SELECT * FROM student
 
   -- data get korar somoy pagination implement korte hole OFFSET use korbo 
 
-   SELECT * FROM student LIMIT 5
+   SELECT * FROM student LIMIT 5 
+
+  --  OFFSET use kora mane hoose first theke koyta bad dibo 
+     SELECT * FROM student LIMIT 5  OFFSET 1;
+     
+
+     SELECT * FROM student LIMIT 5  OFFSET 5*0;
