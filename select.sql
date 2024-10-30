@@ -109,3 +109,7 @@ set email='ammmu@gmail' WHERE student_id = 4;
 SHOW timezone
 
 SELECT now()
+
+create table timeZ(ts TIMESTAMP without time zone , tsz TIMESTAMP with time zone)
+
+INSERT INTO timeZ VALUES('2024-01-12 10:45:00', '2024-01-12 10:45:00')
