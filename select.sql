@@ -113,3 +113,23 @@ SELECT now()
 create table timeZ(ts TIMESTAMP without time zone , tsz TIMESTAMP with time zone)
 
 INSERT INTO timeZ VALUES('2024-01-12 10:45:00', '2024-01-12 10:45:00')
+
+SELECT * FROM timeZ
+
+SELECT now()
+
+SELECT CURRENT_DATE;
+
+SELECT now()::date;
+
+SELECT now()::time
+
+SELECT to_char(now(), 'yyyy/mm/dd');
+SELECT to_char(now(), 'Month')
+
+-- 1year - kore fellam  interval
+SELECT CURRENT_DATE - INTERVAL '1 year';
+
+-- age ber korte hole 
+
+SELECT age(CURRENT_DATE, '1995-07-29')
