@@ -62,3 +62,15 @@ SELECT * FROM student
    --SELECT student form austlia or from usa and age is 20
  SELECT * FROM student 
  WHERE (country ='USA' OR country ='Australia') AND age =16
+
+ SELECT * FROM student 
+  WHERE email IS NOT NULL
+
+  -- jodi multiple or thake tahole IN keyword use korte pari 
+
+  SELECT * FROM student
+  WHERE country IN ('UK','USA','Canada')
+
+    -- jodi ai value('UK','USA','Canada) chara value cai tahole NOT IN keyword use korte pari 
+  SELECT * FROM student
+  WHERE country NOT IN ('UK','USA','Canada')
