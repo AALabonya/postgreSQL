@@ -134,4 +134,9 @@ SELECT CURRENT_DATE - INTERVAL '1 year';
 
 SELECT age(CURRENT_DATE, '1995-07-29');
 
-SELECT *, age (CURRENT_DATE, dob) FROM student
+SELECT *, age (CURRENT_DATE, dob) FROM student;
+
+extract use kore j kono kisu ber kore niye aste pari ;
+SELECT extract(month from '2024-01-5'::date);
+
+SELECT 'n'::BOOLEAN
