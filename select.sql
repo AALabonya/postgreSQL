@@ -132,4 +132,6 @@ SELECT CURRENT_DATE - INTERVAL '1 year';
 
 -- age ber korte hole 
 
-SELECT age(CURRENT_DATE, '1995-07-29')
+SELECT age(CURRENT_DATE, '1995-07-29');
+
+SELECT *, age (CURRENT_DATE, dob) FROM student
