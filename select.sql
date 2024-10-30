@@ -14,7 +14,7 @@ CREATE TABLE student (
     country VARCHAR(50)
 );
 INSERT INTO student (student_id, first_name, last_name, age, gender, grade_level, admission_date, course, email, dob, blood_group, country) VALUES
-(1, 'John', 'Doe', 16, 'M', 10, '2022-09-01', 'Mathematics', 'john.doe@example.com', '2006-03-12', 'O+', 'USA'),
+(1, 'Jo', 'Doe', 16, 'M', 10, '2022-09-01', 'Mathematics', 'john.doe@example.com', '2006-03-12', 'O+', 'USA'),
 (2, 'Jane', 'Smith', 17, 'F', 11, '2021-09-01', 'Biology', 'jane.smith@example.com', '2005-07-19', 'A+', 'Canada'),
 (3, 'Michael', 'Johnson', 15, 'M', 9, '2023-01-15', 'Physics', 'michael.johnson@example.com', '2007-11-05', 'B+', 'UK'),
 (4, 'Emily', 'Davis', 18, 'F', 12, '2020-09-01', 'Chemistry', 'emily.davis@example.com', '2004-05-22', 'AB-', 'Australia'),
@@ -91,3 +91,5 @@ SELECT * FROM student
 -- ILIKE use korle small and capital kono somossa nai j kono worde thake e filter kaj korbe
       SELECT * FROM student
   WHERE last_name ILIKE '%H';
+
+  -- data get korar somoy pagination implement korte hole OFFSET use korbo 
